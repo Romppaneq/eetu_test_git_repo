@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghibli & Anime Shop — Inventory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🌿</span>
+        <div>
+          <span class="logo-title">Ghibli &amp; Anime Shop</span>
+          <span class="logo-sub">Inventory Manager</span>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="openAddModal">＋ Add Product</button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Stats Bar -->
+    <div class="stats-bar" id="statsBar">
+      <div class="stat-card">
+        <span class="stat-value" id="statTotal">—</span>
+        <span class="stat-label">Total Products</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statItems">—</span>
+        <span class="stat-label">Items in Stock</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statLow">—</span>
+        <span class="stat-label">Low Stock (&lt;10)</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="statCategories">—</span>
+        <span class="stat-label">Categories</span>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search products…"
+        />
+      </div>
+      <div class="category-filters" id="categoryFilters">
+        <button class="cat-btn active" data-cat="All">All</button>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+      <div class="loading">Loading products…</div>
+    </div>
+  </main>
+
+  <!-- Add Product Modal -->
+  <div class="modal-overlay" id="addModalOverlay">
+    <div class="modal" id="addModal">
+      <div class="modal-header">
+        <h2>Add New Product</h2>
+        <button class="modal-close" id="closeAddModal">✕</button>
+      </div>
+      <form id="addProductForm" class="modal-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="addName">Product Name *</label>
+            <input type="text" id="addName" required placeholder="e.g. Totoro Plush" />
+          </div>
+          <div class="form-group">
+            <label for="addCategory">Category *</label>
+            <input type="text" id="addCategory" required placeholder="e.g. Plush Toy" list="categoryList" />
+            <datalist id="categoryList"></datalist>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="addPrice">Price (€) *</label>
+            <input type="number" id="addPrice" required min="0" step="0.01" placeholder="0.00" />
+          </div>
+          <div class="form-group">
+            <label for="addQuantity">Quantity *</label>
+            <input type="number" id="addQuantity" required min="0" step="1" placeholder="0" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="addDescription">Description</label>
+          <textarea id="addDescription" rows="3" placeholder="Short description…"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="cancelAdd">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit / View Modal -->
+  <div class="modal-overlay" id="editModalOverlay">
+    <div class="modal" id="editModal">
+      <div class="modal-header">
+        <h2>Edit Product</h2>
+        <button class="modal-close" id="closeEditModal">✕</button>
+      </div>
+      <form id="editProductForm" class="modal-form">
+        <input type="hidden" id="editId" />
+        <div class="form-row">
+          <div class="form-group">
+            <label for="editName">Product Name *</label>
+            <input type="text" id="editName" required />
+          </div>
+          <div class="form-group">
+            <label for="editCategory">Category *</label>
+            <input type="text" id="editCategory" required list="categoryList" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="editPrice">Price (€) *</label>
+            <input type="number" id="editPrice" required min="0" step="0.01" />
+          </div>
+          <div class="form-group">
+            <label for="editQuantity">Quantity *</label>
+            <input type="number" id="editQuantity" required min="0" step="1" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="editDescription">Description</label>
+          <textarea id="editDescription" rows="3"></textarea>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-danger" id="deleteProductBtn">Delete</button>
+          <div style="flex:1"></div>
+          <button type="button" class="btn btn-secondary" id="cancelEdit">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

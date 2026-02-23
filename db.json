@@ -1,0 +1,165 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Totoro Large Plush",
+      "category": "Plush Toy",
+      "price": 39.99,
+      "quantity": 25,
+      "description": "Large soft plush of the beloved forest spirit Totoro from My Neighbor Totoro."
+    },
+    {
+      "id": 2,
+      "name": "Totoro Small Plush",
+      "category": "Plush Toy",
+      "price": 14.99,
+      "quantity": 50,
+      "description": "Mini Totoro plush, perfect for placing on your desk or bag."
+    },
+    {
+      "id": 3,
+      "name": "Catbus Plush",
+      "category": "Plush Toy",
+      "price": 29.99,
+      "quantity": 18,
+      "description": "Fluffy Catbus plush toy from My Neighbor Totoro, complete with glowing eyes."
+    },
+    {
+      "id": 4,
+      "name": "No-Face Vinyl Figure",
+      "category": "Figure",
+      "price": 24.99,
+      "quantity": 30,
+      "description": "Detailed vinyl figure of the mysterious No-Face from Spirited Away."
+    },
+    {
+      "id": 5,
+      "name": "Chihiro & Haku Figure Set",
+      "category": "Figure",
+      "price": 44.99,
+      "quantity": 12,
+      "description": "Collector's set featuring Chihiro and Haku in dragon form from Spirited Away."
+    },
+    {
+      "id": 6,
+      "name": "Soot Sprite Set (12 pcs)",
+      "category": "Plush Toy",
+      "price": 19.99,
+      "quantity": 40,
+      "description": "Set of 12 adorable soot sprite mini plushies as seen in Spirited Away and My Neighbor Totoro."
+    },
+    {
+      "id": 7,
+      "name": "Calcifer Enamel Pin",
+      "category": "Accessory",
+      "price": 8.99,
+      "quantity": 75,
+      "description": "Cheerful enamel pin of Calcifer the fire demon from Howl's Moving Castle."
+    },
+    {
+      "id": 8,
+      "name": "Howl's Moving Castle Model Kit",
+      "category": "Model Kit",
+      "price": 59.99,
+      "quantity": 8,
+      "description": "Detailed paper model kit of Howl's iconic moving castle."
+    },
+    {
+      "id": 9,
+      "name": "Jiji Cat Plush",
+      "category": "Plush Toy",
+      "price": 17.99,
+      "quantity": 35,
+      "description": "Soft and elegant black cat plush inspired by Jiji from Kiki's Delivery Service."
+    },
+    {
+      "id": 10,
+      "name": "Kiki Ceramic Mug",
+      "category": "Homeware",
+      "price": 15.99,
+      "quantity": 20,
+      "description": "Hand-painted ceramic mug featuring Kiki flying on her broomstick."
+    },
+    {
+      "id": 11,
+      "name": "Princess Mononoke San Figure",
+      "category": "Figure",
+      "price": 34.99,
+      "quantity": 15,
+      "description": "Highly detailed figure of San from Princess Mononoke with her wolf companions."
+    },
+    {
+      "id": 12,
+      "name": "Yubaba Resin Figure",
+      "category": "Figure",
+      "price": 27.99,
+      "quantity": 10,
+      "description": "Intricate resin figure of Yubaba, the witch bathhouse owner from Spirited Away."
+    },
+    {
+      "id": 13,
+      "name": "Nausicaa of the Valley Pin Set",
+      "category": "Accessory",
+      "price": 12.99,
+      "quantity": 60,
+      "description": "Set of 3 enamel pins featuring Nausicaa, Mehve glider and Ohm."
+    },
+    {
+      "id": 14,
+      "name": "Ponyo Glass Figure",
+      "category": "Figure",
+      "price": 21.99,
+      "quantity": 22,
+      "description": "Adorable hand-blown glass figure of Ponyo running on the waves."
+    },
+    {
+      "id": 15,
+      "name": "Totoro Umbrella",
+      "category": "Accessory",
+      "price": 22.99,
+      "quantity": 30,
+      "description": "Full-size umbrella with a Totoro handle and forest-print canopy."
+    },
+    {
+      "id": 16,
+      "name": "Spirited Away Tapestry",
+      "category": "Homeware",
+      "price": 32.99,
+      "quantity": 14,
+      "description": "Large woven wall tapestry featuring the iconic Spirited Away bathhouse scene."
+    },
+    {
+      "id": 17,
+      "name": "Radish Spirit Bobblehead",
+      "category": "Figure",
+      "price": 18.99,
+      "quantity": 25,
+      "description": "Wobbly bobblehead of the gentle Radish Spirit from Spirited Away."
+    },
+    {
+      "id": 18,
+      "name": "My Neighbor Totoro Puzzle (1000 pcs)",
+      "category": "Puzzle",
+      "price": 26.99,
+      "quantity": 16,
+      "description": "1000-piece jigsaw puzzle of the iconic forest scene from My Neighbor Totoro."
+    },
+    {
+      "id": 19,
+      "name": "Howl & Sophie Snow Globe",
+      "category": "Homeware",
+      "price": 38.99,
+      "quantity": 9,
+      "description": "Beautiful snow globe featuring Howl and Sophie dancing, with golden flakes."
+    },
+    {
+      "id": 20,
+      "name": "Spirited Away Tote Bag",
+      "category": "Accessory",
+      "price": 16.99,
+      "quantity": 45,
+      "description": "Reusable cotton tote bag printed with characters from Spirited Away."
+    }
+  ],
+  "nextId": 21
+}
